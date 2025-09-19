@@ -27,7 +27,8 @@
 
   <script>
   async function loadItems() {
-    const res = await fetch('items.json?_=' + Date.now());
+    - const res = await fetch('items.json?_=' + Date.now());
++ const res = await fetch('./items.json?v=' + Date.now());
     const items = await res.json();
 
     // Group by category

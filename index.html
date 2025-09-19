@@ -9,7 +9,7 @@
 <body>
   <header class="header">
     <div class="brand">
-      <img src="images/logo.jpg" alt="لوگوی Café Ario" class="logo" />
+      <img src="logo.jpg" alt="لوگوی Café Ario" class="logo" />
       <div class="titles">
         <h1>منوی Café Ario</h1>
         <p>انتخاب‌های خوشمزه، با عشق ☕</p>
@@ -27,7 +27,7 @@
 
   <script>
   async function loadItems() {
-    const res = await fetch('data/items.json?_=' + Date.now());
+    const res = await fetch('items.json?_=' + Date.now());
     const items = await res.json();
 
     // Group by category
